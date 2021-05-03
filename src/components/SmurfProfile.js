@@ -6,7 +6,7 @@ const SmurfProfile = (props) => {
   const { smurfs } = props;
 
   let { smurfId } = useParams();
-  if (!smurf || smurfs.length === 0) {
+  if (!smurfs || smurfs.length === 0) {
     return <div></div>;
   }
 

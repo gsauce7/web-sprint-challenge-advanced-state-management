@@ -8,12 +8,10 @@ import { fetchSmurfs } from './actions/index';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { fetchSmurfs } from './actions';
 import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   componentDidMount() {
-    const { fetchSmurfs } = this.props;
     fetchSmurfs();
   }
 
